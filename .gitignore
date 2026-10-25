@@ -361,3 +361,24 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+## ---- Additional project-specific ignores ----
+# Local configuration / secrets (keep real values out of git)
+appsettings.*.local.json
+appsettings.Local.json
+*.env
+.env
+.env.*
+!.env.example
+secrets.json
+
+# Logs
+logs/
+*.log
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+
+# Local development settings (copy from appsettings.Development.example.json)
+appsettings.Development.json
